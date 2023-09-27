@@ -26,7 +26,8 @@ const Countdown = () => {
   
     return (
       <div className="countdown">
-        <h2>{time}</h2>
+        <h2 className="material-symbols-outlined">today</h2>
+            <span>{time}</span>
       </div>
     );
   };

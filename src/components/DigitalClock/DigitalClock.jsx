@@ -12,9 +12,10 @@ const DigitalClock = () => {
   }, []);
 
     return(
-<div className="digital-clock">
-    <h2>{clockState}</h2>
-</div>
+        <div className="digital-clock">
+            <h2 className="material-symbols-outlined">schedule</h2>
+                <span>{clockState}</span>
+        </div>
     );
 };
 

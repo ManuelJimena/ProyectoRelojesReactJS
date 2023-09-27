@@ -22,11 +22,10 @@ const Stopwatch = () => {
    return (
 
     <div className="stopwatch">
-        <h2>
+        <h2 className="material-symbols-outlined">timer</h2>
             <span>{("0" + Math.floor((time / 60000) % 60)).slice(-2)}:</span>
             <span>{("0" + Math.floor((time / 1000) % 60)).slice(-2)}:</span>
             <span>{("0" + ((time / 10) % 100)).slice(-2)}</span>
-        </h2>
         <div id="buttons">
             {!timerOn && time === 0 && (
                 <button onClick={() => setTimerOn(true)}>Start</button>
